@@ -447,6 +447,15 @@ html {
   padding: 20px 0 0 0;
   border-radius: 0 0 0 200px;
   margin-bottom: 100px;
+  @media #{$tab}{
+    height: 630px;
+  }
+  @media #{$sp}{
+    height: 600px;
+  }
+  @media screen and (max-width: 460px) {
+    height: 550px;
+  }
   &__inr{
     &-top{
       display: flex;
@@ -456,6 +465,12 @@ html {
       align-items: center;
       color: #FFFFFF;
       margin-bottom: 56px;
+      @media #{$tab}{
+        padding: 0 20px;
+      }
+      @media #{$sp}{
+        margin-bottom: 40px;
+      }
       a:hover{
         opacity: 0.7;
       }
@@ -463,14 +478,23 @@ html {
     .header__h1{
       text-align: center;
       font-size: 1.2rem;
+      @media #{$tab}{
+        width: 17%;
+      }
     }
     .header__menu{
+      @media #{$sp}{
+        display: none;
+      }
       ul{
         display: flex;
         align-items: center;
         li{
           margin-left: 16px;
           font-size: 1.6rem;
+          @media #{$tab}{
+            font-size: 1.4rem;
+          }
         }
         .header__menu-btn{
           a{
@@ -489,14 +513,31 @@ html {
     .header__maincontent-back{
       width: 720px;
       height: 440px;
+      max-width: 100%;
+      max-height: 100%;
       background-color: #FFFFFF;
       position: relative;
       margin: 0 auto;
       border: #333333 2px solid;
       border-radius: 10px;
+      @media #{$tab}{
+        max-width: 85%;
+        max-height: 85%;
+        height: 400px;
+      }
+      @media #{$sp}{
+        max-width: 90%;
+        height: 350px;
+        max-height: 90%;
+      }
+      @media screen and (max-width: 460px) {
+        height: 320px;
+      }
       .header__maincontent{
         width: 720px;
         height: 440px;
+        max-width: 100%;
+        max-height: 100%;
         background-color: #FFFFFF;
         display: flex;
         flex-direction: column;
@@ -511,21 +552,63 @@ html {
         h2{
           font-size: 4.8rem;
           margin-bottom: 24px;
+          @media #{$tab}{
+            font-size: 4.2rem;
+          }
+          @media #{$sp}{
+            font-size: 3.8rem;
+          }
+          @media screen and (max-width: 460px) {
+            font-size: 3.1rem;
+          }
+          @media screen and (max-width: 378px) {
+            font-size: 2.5rem;
+          }
           span{
             color: #61C1BD;
           }
           .small{
             color: #333333;
             font-size: 3.2rem;
+            @media #{$tab}{
+              font-size: 2.9rem;
+            }
+            @media #{$sp}{
+              font-size: 2.4rem;
+            }
+            @media screen and (max-width: 460px) {
+              font-size: 2.2rem;
+            }
           }
         }
         &-text{
           font-size: 1.4rem;
           margin-bottom: 48px;
+          @media #{$tab}{
+            font-size: 1.3rem;
+          }
+          @media #{$sp}{
+            font-size: 1.2rem;
+          }
+          @media screen and (max-width: 460px) {
+            font-size: 1.1rem;
+          }
+          @media screen and (max-width: 378px) {
+            font-size: 1rem;
+          }
         }
         &-subtext{
           font-size: 1.6rem;
           margin-bottom: 16px;
+          @media #{$tab}{
+            font-size: 1.4rem;
+          }
+          @media #{$sp}{
+            font-size: 1.3rem;
+          }
+          @media screen and (max-width: 460px) {
+            font-size: 1.2rem;
+          }
         }
         &-btn{
           a{
@@ -538,6 +621,24 @@ html {
             font-size: 2.4rem;
             border-radius: 100px;
             border-bottom: #DCDFE0 4px solid;
+            @media #{$tab}{
+              width: 350px;
+              height: 65px;
+              font-size: 2rem;
+              line-height: 60px;
+            }
+            @media #{$sp}{
+              width: 320px;
+              height: 60px;
+              line-height: 60px;
+              font-size: 1.8rem;
+            }
+            @media screen and (max-width: 460px) {
+              width: 260px;
+              height: 50px;
+              line-height: 50px;
+              font-size: 1.6rem;
+            }
           }
           a:hover{
             opacity: 0.7;
@@ -556,28 +657,78 @@ html {
 
 .mainvisual{
   max-width: 1000px;
-  max-height: 398px;
+  height: 398px;
   margin: 0 auto 100px auto;
+  @media #{$tab}{
+    padding: 0 30px;
+    box-sizing: border-box;
+  }
+  @media #{$sp}{
+    height: 600px;
+    padding: 0 30px;
+    box-sizing: border-box;
+  }
+  @media screen and (max-width: 460px) {
+    height: 500px;
+  }
   h2{
     font-size: 4rem;
     font-weight: bold;
     text-align: center;
+    margin-bottom: 48px;
+    @media #{$tab}{
+      font-size: 3.5rem;
+    }
+    @media #{$sp}{
+      font-size: 3.5rem;
+    }
+    @media screen and (max-width: 460px) {
+      font-size: 3.2rem;
+    }
   }
   &__content{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media #{$sp}{
+      flex-direction: column;
+    }
+    &-img{
+      @media screen and (max-width: 460px) {
+        width: 90%;
+      }
+    }
     &-text{
       max-width: 460px;
+      @media #{$tab}{
+        max-width: 400px;
+        padding-left: 10px;
+        box-sizing: border-box;
+      }
       &top{
         font-size: 3.2rem;
         padding-bottom: 24px;
         margin-bottom: 24px;
         border-bottom: #333333 1px solid;
+        @media #{$tab}{
+          font-size: 2.8rem;
+        }
+        @media #{$sp}{
+          margin-top: 30px;
+        }
+        @media screen and (max-width: 460px) {
+          font-size: 2.6rem;
+        }
       }
       &bottom{
         font-size: 1.6rem;
         line-height: 1.8;
+        @media #{$tab}{
+          font-size: 1.4rem;
+        }
+        @media screen and (max-width: 460px) {
+          font-size: 1.3rem;
+        }
       }
     }
   }
@@ -588,6 +739,9 @@ html {
 .corseintroduction{
   background-color: #F4FBFD;
   padding: 100px 0 30px 0;
+  @media screen and (max-width: 460px) {
+    padding: 70px 0 30px 0;
+  }
   &__inr{
     max-width: 1010px;
     margin: 0 auto;
@@ -595,25 +749,58 @@ html {
       font-size: 4rem;
       text-align: center;
       margin-bottom: 48px;
+      font-weight: bold;
+      @media #{$tab}{
+        font-size: 3.5rem;
+      }
+      @media screen and (max-width: 460px) {
+        font-size: 3.2rem;
+      }
     }
     .corseintroduction__content{
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
+      @media #{$tab}{
+        justify-content: center;
+        align-items: center;
+        padding: 0 20px;
+        box-sizing: border-box;
+      }
+      @media #{$sp}{
+        justify-content: center;
+        align-items: center;
+        padding: 0 20px;
+        box-sizing: border-box;
+      }
       .corese__block{
           width: 480px;
           height: 516px;
+          max-width: 100%;
+          max-height: 100%;
           background-color: #FFFFFF;
           border-radius: 5px;
           border-right: #DCDFE0 4px solid;
           border-bottom: #DCDFE0 4px solid;
           margin-bottom: 62px;
+          @media #{$sp}{
+            height: 550px;
+          }
+          @media screen and (max-width: 460px) {
+            height: 470px;
+          }
         .corese{
           padding: 40px;
+          @media screen and (max-width: 460px) {
+            padding: 20px;
+          }
           h3{
             font-size: 2.4rem;
             text-align: center;
             margin-bottom: 24px;
+            @media screen and (max-width: 460px) {
+              font-size: 2.2rem;
+            }
           }
           &__img{
             margin-bottom: 32px;
@@ -622,22 +809,84 @@ html {
             font-size: 1.6rem;
             padding: 0 18px;
             box-sizing: border-box;
+            @media #{$sp}{
+              padding: 0 15px;
+            }
+            @media screen and (max-width: 460px) {
+              font-size: 1.3rem;
+            }
             ul{
               li{
-                display: flex;
-                margin-bottom: 24px;
-                margin-right: 20px;
+                width: 80%;
+                margin: 0 auto 24px auto;
+                justify-content: end;
+                position: relative;
               }
               li::before{
                 content: '';
                 background-image: url(../image/corese-check.png);
                 width: 35px;
                 height: 15px;
-                display: inline-block;
                 background-repeat: no-repeat;
-                margin-right: 16px;
+                position: absolute;
+                top: 0;
+                left: -35px;
+                @media #{$sp}{
+                  left: -27px;
+                }
               }
             }
+          }
+        }
+      }
+    }
+  }
+}
+
+.price{
+  display: none;
+  margin: 100px;
+  background-color: #F7F7F7;
+  table{
+    border-collapse: collapse;
+    thead{
+      td{
+        width: 200px;
+        height: 135px;
+      }
+      th{
+        width: 270px;
+        padding: 33px 0;
+        box-sizing: border-box;
+        color: #676551;
+        font-size: 2.1rem;
+        text-align: center;
+        background-color: #61C1BD;
+        border: 1px solid;
+        span{
+          display: block;
+          font-size: 12px;
+          margin-top: 16px;
+        }
+      }
+    }
+    tbody{
+      tr{
+        text-align: center;
+        th{
+          border: #333333 1px solid;
+          width: 200px;
+          height: 100px;
+          font-size: 2rem;
+          text-align: center;
+        }
+        td{
+          border: #333333 1px solid;
+          width: 270px;
+          height: 100px;
+          font-size: 2.4rem;
+          span{
+            display: block;
           }
         }
       }
