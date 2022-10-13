@@ -3,8 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=0.5,user-scalable=yes,initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css" />
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+<script type="text/javascript" src="https://web.runland.co.jp/wp-content/uploads/2020/05/scroll-hint.min_.js"></script>
+<script>
+ $(function(){
+  new ScrollHint('.table-scroll', {
+    remainingTime: 5000
+  });
+}); 
+</script>
+<link rel="stylesheet" type="text/css" href="https://web.runland.co.jp/wp-content/uploads/2020/05/scroll-hint.css">
 
     <title>kadai8</title>
   </head>
@@ -12,12 +23,46 @@
      <!-- header -->
      <header class="header">
        <div class="header__inr">
+
+        <div class="header__h1-sp">
+          <a href="">
+            <span>プログラミング教室</span>
+            <img src="image/header-logo.png"
+                srcset="image/header-logo.png 1x,
+                image/header-logo2x.png 2x" alt="プログラミング教室">
+          </a>
+        </div>
+
+        <div id="toggle">
+          <div id="toggle-box">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+
+        <div id="nav-content">
+          <nav>
+            <ul>
+              <li><a href="">私たちについて</a></li>
+              <li><a href="">コース紹介</a></li>
+              <li><a href="">受講料金</a></li>
+              <li><a href="">教室紹介</a></li>
+              <li class="header__menu-btn"><a href="">無料体験はこちら</a></li>
+            </ul>
+          </nav>
+        </div>
+
          <div class="header__inr-top">
 
            <div class="header__h1">
              <a href="">
               <span>プログラミング教室</span>
-              <h1><img src="image/header-logo.png" alt="プログラミング教室"></h1>
+              <h1>
+                <img src="image/header-logo.png"
+                srcset="image/header-logo.png 1x,
+                image/header-logo2x.png 2x" alt="プログラミング教室">
+              </h1>
              </a>
            </div>
 
@@ -31,26 +76,29 @@
              </ul>
            </div>
          </div>
-         <div class="header__maincontent-back">
-            <div class="header__maincontent">
-              <h2>
-                <span>"LOGO"</span><span class="small">で</span><br>
-                人生<span class="small">を</span>プログラミング！
-              </h2>
-              <div class="header__maincontent-text">
-                スタートから転職/フリーランスで仕事を獲得するまで。
-                <br>きっちりゴールに導き、あなたを人生の次のステージに送り出します。
-              </div>
-              <div class="header__maincontent-subtext">
-                ＼ 今ならとってもお得！ ／
-              </div>
-              <div class="header__maincontent-btn">
-                <a href="">無料体験はこちら</a>
-              </div>
-          </div>
          </div>
        </div>
     </header>
+
+<div class="header__bottomcontent">
+  <div class="header__bottomcontent-inr">
+    <div class="header__bottomcontent__block">
+      <h2>
+        <span>"LOGO"</span><span class="small">で</span><br>
+        人生<span class="small">を</span>プログラミング！
+      </h2>
+      <div class="header__bottomcontent-text">
+        スタートから転職/フリーランスで仕事を獲得するまで。
+        <br>きっちりゴールに導き、あなたを人生の次のステージに送り出します。
+      </div>
+      <div class="header__bottomcontent-subtext">
+        ＼ 今ならとってもお得！ ／
+      </div>
+      <div class="header__bottomcontent-btn">
+        <a href="">無料体験はこちら</a>
+      </div>
+  </div>
+</div>
 
     <!-- mainvisual -->
 
@@ -58,7 +106,9 @@
       <h2>LOGOとは</h2>
       <div class="mainvisual__content">
         <div class="mainvisual__content-img">
-          <img src="image/mainvisual.png" alt="LOGOとは">
+          <img src="image/mainvisual.png"
+          srcset="image/mainvisual.png  1x,
+          image/mainvisual2x.png 2x" alt="LOGOとは">
         </div>
         <div class="mainvisual__content-text">
           <div class="mainvisual__content-texttop">
@@ -83,7 +133,7 @@
             <div class="corese">
               <h3>エンジニア転職コース</h3>
               <div class="corese__img">
-                <img src="image/corese1.png" alt="">
+                <img src="image/corese1.png"srcset="image/corese1.png  1x,image/corese12x.png 2x"alt="エンジニア転職コース">
               </div>
               <div class="corese__text">
                 <ul>
@@ -98,7 +148,7 @@
             <div class="corese">
               <h3>Webデザイナーコース</h3>
               <div class="corese__img">
-                <img src="image/corese2.png" alt="">
+                <img src="image/corese2.png"srcset="image/corese2.png  1x,image/corese22x.png 2x"alt alt="Webデザイナーコース">
               </div>
               <div class="corese__text">
                 <ul>
@@ -114,7 +164,7 @@
             <div class="corese">
               <h3>フリーランスコース</h3>
               <div class="corese__img">
-                <img src="image/corese3.png" alt="">
+                <img src="image/corese3.png"srcset="image/corese3.png  1x,image/corese32x.png 2x"altalt="フリーランスコース">
               </div>
               <div class="corese__text">
                 <ul>
@@ -128,9 +178,9 @@
 
           <div class="corese__block">
             <div class="corese">
-              <h3>フリーランスコース</h3>
+              <h3>キッズコース</h3>
               <div class="corese__img">
-                <img src="image/corese4.png" alt="">
+                <img src="image/corese4.png"srcset="image/corese4.png  1x,image/corese42x.png 2x"altalt="キッズコース">
               </div>
               <div class="corese__text">
                 <ul>
@@ -145,63 +195,83 @@
         </div>
       </div>
     </div>
+    <div class="price">
+      <div class="price__inr table-scroll">
+        <table>
+          <thead>
+              <tr>
+                  <th class="plannone"></th>
+                  <th class="rightplan">ライトプラン
+                     <span>働きながら、自分のペースで<br>
+                      長期的に学習したい方向け</span>
+                  </th>
+                  <th class="standardplan">スタンダードプラン
+                    <span>働きながらも、効率的に<br>
+                      学習を進めたい方におすすめ</span>
+                  </th>
+                  <th class="expertplan">エキスパートプラン
+                    <span>トータプサポートを受けつつ、<br>
+                      短期集中で一気に学習を終えたい方向け</span>
+                  </th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td><span>月額料金</span></td>
+                  <td><span>3,400円</span><br>（税別）</td>
+                  <td><span>5,200円</span><br>（税別）</td>
+                  <td><span>7,200円</span><br>（税別）</td>
+              </tr>
+              <tr>
+                  <td><span>講座回数</span></td>
+                  <td><span>4回 </span>/ 月</td>
+                  <td><span>6回 </span>/ 月</td>
+                  <td><span>8回 </span>/ 月</td>
+              </tr>
+              <tr>
+                <td><span>チャット質問</span></td>
+                <td><span>月10回まで</span><br>可能</td>
+                <td><span>無制限</span></td>
+                <td><span>無制限</span></td>
+            </tr>
+            <tr>
+              <td><span>電話相談</span></td>
+              <td>無し</td>
+              <td><span>月1回まで</span><br>可能</td>
+              <td><span>無制限</span></td>
+            </tr>
+            <tr>
+              <td><span>学習期間<br>目約</span></td>
+              <td>約12〜14ヶ月</td>
+              <td>約10〜12ヶ月</td>
+              <td>約4〜6ヶ月</td>
+            </tr>
+          </tbody>
+        </table> 
+      </div>
+    </div>
 
-  <div class="price">
-    <table>
-      <thead>
-          <tr>
-              <td></td>
-              <th>ライトプラン
-                 <span>働きながら、自分のペースで<br>
-                  長期的に学習したい方向け</span>
-              </th>
-              <th>スタンダードプラン
-                <span>働きながらも、効率的に<br>
-                  学習を進めたい方におすすめ</span>
-              </th>
-              <th>エキスパートプラン
-                <span>トータプサポートを受けつつ、<br>
-                  短期集中で一気に学習を終えたい方向け</span>
-              </th>
-          </tr>
-      </thead>
-      <tbody>
-          <tr>
-              <th>月額料金</th>
-              <td>3,400円<span>（税別）</span></td>
-              <td>5,200円<span>（税別）</span></td>
-              <td>7,200円<span>（税別）</span></td>
-          </tr>
-          <tr>
-              <th>講座回数</th>
-              <td>4回 / 月</td>
-              <td>6回 / 月</td>
-              <td>8回 / 月</td>
-          </tr>
-          <tr>
-            <th>チャット質問</th>
-            <td>月10回まで<span>可能</span></td>
-            <td>無制限</td>
-            <td>無制限</td>
-        </tr>
-        <tr>
-          <th>電話相談</th>
-          <td>無し</td>
-          <td>月1回まで<span>可能</span></td>
-          <td>無制限</td>
-        </tr>
-        <tr>
-          <th>学習期間<br>目約</th>
-          <td>約12〜14ヶ月</td>
-          <td>約10〜12ヶ月</td>
-          <td>約4〜6ヶ月</td>
-        </tr>
-      </tbody>
-    </table> 
+  <!-- experience -->
+   
+  <div class="experience">
+    <div class="experience__maincontent">
+      <div class="experience__maincontent-text">
+        今なら
+        <br>入学金が無料に！！
+      </div>
+      <div class="experience__maincontent-subtext">
+        ＼ さぁ、あなたも始めよう！ ／
+      </div>
+      <div class="experience__maincontent-btn">
+        <a href="">無料体験はこちら</a>
+      </div>
+    </div>
   </div>
 
     <footer>
-      
+      <div class="footer__copyright">
+        ©︎ copy right.2022
+      </div>
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
