@@ -995,8 +995,6 @@ html {
 //price
 
 .price{
-  width: 1053px;
-  max-width: 100%;
   margin: 100px auto 140px auto;
   padding: 0 30px;
   box-sizing: border-box;
@@ -1012,10 +1010,16 @@ html {
           color: #ffff;
           font-size: 2.1rem;
           text-align: center;
+          @media #{$sp}{
+            font-size: 1.8rem;
+          }
           span{
             display: block;
             font-size: 1.2rem;
             margin-top: 16px;
+            @media #{$sp}{
+              font-size: 1rem;
+            }
           }
         }
         .plannone{
@@ -1053,6 +1057,9 @@ html {
             height: 100px;
             font-size: 2.4rem;
             vertical-align: middle;
+            @media #{$sp}{
+              font-size: 2rem;
+            }
             span{
               font-weight: bold;
             }
@@ -1066,6 +1073,9 @@ html {
           td{
             span{
               font-size: 3.2rem;
+              @media #{$sp}{
+                font-size: 2.6rem;
+              }
             }
           }
           td:first-child{
@@ -1077,10 +1087,15 @@ html {
       }
     }
   }
-  .table-scroll{
-    overflow: auto; /*スクロールさせる*/
-    white-space: nowrap; /*文字の折り返しを禁止*/
-    /*今回の設置を分かりやすくするためワザと狭い幅を指定。本来は不必要な指定です。*/
+  .table-wrap {
+    overflow-x: scroll;
+  }
+  .table {
+    width: 100%;
+    min-width: 1053px;
+    @media #{$sp}{
+      min-width: 768px;
+    }
   }
 }
 
