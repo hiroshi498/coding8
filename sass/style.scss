@@ -998,6 +998,9 @@ html {
   margin: 100px auto 140px auto;
   padding: 0 30px;
   box-sizing: border-box;
+  @media #{$sp}{
+    margin: 70px auto 90px auto;
+  }
   &__inr{
     table{
       border-collapse: collapse;
@@ -1111,6 +1114,9 @@ html {
   background-color: #61C1BD;
   text-align: center;
   color: #ffffff;
+  @media #{$sp}{
+    height: 400px;
+  }
   &__maincontent{
     display: flex;
     align-items: center;
@@ -1119,6 +1125,9 @@ html {
     &-text{
       font-size: 4.8rem;
       margin-bottom: 48px;
+      @media screen and (max-width: 460px) {
+       font-size: 3.5rem;
+      }
     }
     &-subtext{
       font-size: 1.6rem;

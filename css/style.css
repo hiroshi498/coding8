@@ -1217,6 +1217,12 @@ html {
           box-sizing: border-box;
 }
 
+@media only screen and (max-width: 768px) {
+  .price {
+    margin: 70px auto 90px auto;
+  }
+}
+
 .price__inr table {
   border-collapse: collapse;
 }
@@ -1359,6 +1365,12 @@ html {
   color: #ffffff;
 }
 
+@media only screen and (max-width: 768px) {
+  .experience {
+    height: 400px;
+  }
+}
+
 .experience__maincontent {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1378,6 +1390,12 @@ html {
 .experience__maincontent-text {
   font-size: 4.8rem;
   margin-bottom: 48px;
+}
+
+@media screen and (max-width: 460px) {
+  .experience__maincontent-text {
+    font-size: 3.5rem;
+  }
 }
 
 .experience__maincontent-subtext {
