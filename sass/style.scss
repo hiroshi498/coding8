@@ -1128,10 +1128,16 @@ html {
       @media screen and (max-width: 460px) {
        font-size: 3.5rem;
       }
+      @media screen and (max-width: 340px) {
+        font-size: 3.2rem;
+       }
     }
     &-subtext{
       font-size: 1.6rem;
       margin-bottom: 16px;
+      @media screen and (max-width: 340px) {
+        font-size: 1.5rem;
+       }
     }
     &-btn{
       a{
@@ -1162,6 +1168,12 @@ html {
           line-height: 50px;
           font-size: 1.6rem;
         }
+        @media screen and (max-width: 340px) {
+          width: 245px;
+          height: 47px;
+          line-height: 47px;
+          font-size: 1.5rem;
+         }
       }
       a:hover{
         opacity: 0.7;

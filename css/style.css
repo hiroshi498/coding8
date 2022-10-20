@@ -1398,9 +1398,21 @@ html {
   }
 }
 
+@media screen and (max-width: 340px) {
+  .experience__maincontent-text {
+    font-size: 3.2rem;
+  }
+}
+
 .experience__maincontent-subtext {
   font-size: 1.6rem;
   margin-bottom: 16px;
+}
+
+@media screen and (max-width: 340px) {
+  .experience__maincontent-subtext {
+    font-size: 1.5rem;
+  }
 }
 
 .experience__maincontent-btn a {
@@ -1439,6 +1451,15 @@ html {
     height: 50px;
     line-height: 50px;
     font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .experience__maincontent-btn a {
+    width: 245px;
+    height: 47px;
+    line-height: 47px;
+    font-size: 1.5rem;
   }
 }
 
