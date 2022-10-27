@@ -773,6 +773,7 @@ html {
 @media screen and (max-width: 460px) {
   .header__bottomcontent-inr .header__bottomcontent__block h2 {
     font-size: 3.1rem;
+    margin-bottom: 15;
   }
 }
 
@@ -814,27 +815,13 @@ html {
   margin-bottom: 48px;
 }
 
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
-  .header__bottomcontent-inr .header__bottomcontent__block .header__bottomcontent-text {
-    font-size: 1.3rem;
-  }
-}
-
 @media only screen and (max-width: 768px) {
   .header__bottomcontent-inr .header__bottomcontent__block .header__bottomcontent-text {
-    font-size: 1.2rem;
-  }
-}
-
-@media screen and (max-width: 460px) {
-  .header__bottomcontent-inr .header__bottomcontent__block .header__bottomcontent-text {
-    font-size: 1.1rem;
-  }
-}
-
-@media screen and (max-width: 378px) {
-  .header__bottomcontent-inr .header__bottomcontent__block .header__bottomcontent-text {
-    font-size: 1rem;
+    font-size: 1.4rem;
+    padding: 0 10px;
+    -webkit-box-sizing: 10px 0;
+            box-sizing: 10px 0;
+    margin-bottom: 40px;
   }
 }
 

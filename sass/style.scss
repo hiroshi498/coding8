@@ -709,6 +709,7 @@ html {
         }
         @media screen and (max-width: 460px) {
           font-size: 3.1rem;
+          margin-bottom: 15;
         }
         @media screen and (max-width: 378px) {
           font-size: 2.5rem;
@@ -733,17 +734,11 @@ html {
       .header__bottomcontent-text{
         font-size: 1.4rem;
         margin-bottom: 48px;
-        @media #{$tab}{
-          font-size: 1.3rem;
-        }
         @media #{$sp}{
-          font-size: 1.2rem;
-        }
-        @media screen and (max-width: 460px) {
-          font-size: 1.1rem;
-        }
-        @media screen and (max-width: 378px) {
-          font-size: 1rem;
+          font-size: 1.4rem;
+          padding: 0 10px;
+          box-sizing: 10px 0;
+          margin-bottom: 40px;
         }
       }
       .header__bottomcontent-subtext{
